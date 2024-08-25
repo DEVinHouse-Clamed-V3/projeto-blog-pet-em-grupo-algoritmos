@@ -32,8 +32,8 @@ h1 {
     margin-bottom: 5px;
 }
 
-.form-group input, 
-.form-group textarea, 
+.form-group input,
+.form-group textarea,
 .form-group select {
     width: 100%;
     padding: 8px;
@@ -75,11 +75,14 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #b3d1ff;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
 }
@@ -105,11 +108,11 @@ button.delete-btn:hover {
 
 /* CSS tela cadastro */
 
-body{
+body {
     background-image: url(../assets/depositphotos_2640329-stock-illustration-seamless-footprint-pattern.jpg);
 }
 
-.span-color {
+.error {
     color: #780000;
 }
 
@@ -120,6 +123,7 @@ body{
 }
 
 .container-home {
+    height: 100%;
     width: 70%;
     background-color: #FFF;
     border-radius: 10px;
@@ -127,7 +131,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.container-titulo{
+.container-titulo {
     background-color: #003049;
     padding: 10px;
     border-radius: 10px;
@@ -137,7 +141,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 5px 5px;
-    position: relative; 
+    position: relative;
 }
 
 .input-container label {
@@ -185,7 +189,8 @@ select {
     background-color: #c1121f;
 }
 
-.footer-app p, .text-center {
+.footer-app p,
+.text-center {
     text-align: center;
 }
 
@@ -205,4 +210,20 @@ select {
     cursor: pointer;
     font-size: 16px;
     color: #888;
+}
+
+.imagem {
+    display: block;
+    margin: 30px auto;
+    width: 50vw;
+    max-width: 150px;
+    height: auto; 
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.imagem-neon {
+    filter: drop-shadow(0 0 10px #003949) drop-shadow(0 0 20px #669bbc);
 }
