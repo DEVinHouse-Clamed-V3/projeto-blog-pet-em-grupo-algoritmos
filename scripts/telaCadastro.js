@@ -22,6 +22,16 @@ function cadastro(event) {
     const confirmarSenha = document.getElementById('confirmarSenha').value
     const biografia = document.getElementById('biografia').value
 
+    if (biografia === "") {
+        document.getElementById('biografia').style.borderColor = "#780000"
+        document.getElementById('biografia').style.borderWidth = "2px"
+        document.getElementById('erro-biografia').innerText = "Biografia é obrigatória"
+    } else {
+        document.getElementById('biografia').style.borderColor = ""
+        document.getElementById('biografia').style.borderWidth = ""
+        document.getElementById('erro-biografia').innerText = ""
+    }
+
     if (senha !== confirmarSenha) {
         document.getElementById('erro-senha').innerText = "As senhas não conferem!"
     } else { document.getElementById('erro-senha').innerText = "" }
@@ -44,8 +54,10 @@ function cadastro(event) {
 
         localStorage.setItem("cadastro", JSON.stringify(listaNoLocalStorage))
 
+        const imagem = document.getElementById('visualizacao-url');
+        imagem.src = '';
+        imagem.classList.remove('imagem-neon');
         document.getElementById('form-post').reset()
-
     }
 
 }
@@ -54,27 +66,27 @@ document
     .getElementById('form-post')
     .addEventListener('submit', cadastro)
 
-function adicionarImagem() {
-    var url = document.getElementById('foto').value;
-    var imagem = document.getElementById('visualizacao-url');
-
-    if (url) {
-        imagem.src = url;
-
-        imagem.classList.remove('imagem-neon');
-
-        imagem.onload = function () {
-            imagem.classList.add('imagem-neon');
-        };
-
-        imagem.onerror = function () {
+    function adicionarImagem() {
+        const url = document.getElementById('foto').value;
+        const imagem = document.getElementById('visualizacao-url');
+    
+        if (url) {
+            imagem.src = url;
+    
             imagem.classList.remove('imagem-neon');
+    
+            imagem.onload = function () {
+                imagem.classList.add('imagem-neon');
+            };
+    
+            imagem.onerror = function () {
+                imagem.classList.remove('imagem-neon');
+                imagem.src = '';
+            };
+        } else {
             imagem.src = '';
-        };
-    } else {
-        imagem.src = '';
-        imagem.classList.remove('imagem-neon');
+            imagem.classList.remove('imagem-neon');
+        }
     }
-}
 
 document.getElementById('foto').addEventListener('input', adicionarImagem);
