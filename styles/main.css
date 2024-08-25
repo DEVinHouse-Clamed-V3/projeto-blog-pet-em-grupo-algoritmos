@@ -103,5 +103,106 @@ button.delete-btn:hover {
 }
 
 
-/* CSS menu */
+/* CSS tela cadastro */
 
+body{
+    background-image: url(../assets/depositphotos_2640329-stock-illustration-seamless-footprint-pattern.jpg);
+}
+
+.span-color {
+    color: #780000;
+}
+
+.container-home h1 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-home {
+    width: 70%;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-titulo{
+    background-color: #003049;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    position: relative; 
+}
+
+.input-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid #003049;
+    outline-color: #003049;
+    resize: vertical;
+}
+
+.input-container textarea {
+    height: auto;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit {
+    width: 50%;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #669bbc;
+    margin-top: 10px;
+}
+
+.footer-app {
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    font-weight: bold;
+    color: #780000;
+    background-color: #c1121f;
+}
+
+.footer-app p, .text-center {
+    text-align: center;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+}
