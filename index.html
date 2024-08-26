@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/home.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="container-h1">
+            <h1>Pet Blog</h1>
+            <a class="login" href="login.html">Login</a>
+        </div>
+        <div class="container-button">
+            <div>
+                <button class="button">Cães</button>
+                <button class="button">Gatos</button>
+                <button class="button">Passáros</button>
+                <button class="button">Diveros</button>
+            </div>
+            <div>
+                <a class="a-escritor" href="post.html">Seja um escritor</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-section">
+            <div class="titulo">
+                <h2>Todos os Posts</h2>
+            </div>
+            <div id="artigos" class="artigos">
+                <articla class="card">
+                    <div>
+                        <img class="img" src="dog.png" alt="">
+                        <p class="categoria">
+                            Cães
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="h2">
+                            Antonio o Comilão.
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="data">
+                            23/08/2024
+                        </p>
+                        <p class="tempo">
+                            15 minutos
+                        </p>
+                    </div>
+
+                </articla>
+                <articla class="card">
+                    <div>
+                        <img class="img" src="ave.png" alt="">
+                        <p class="categoria">
+                            Passáros
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="h2">
+                            joão mudinho
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="data">
+                            22/08/2024
+                        </p>
+                        <p class="tempo">
+                            10 minutos
+                        </p>
+                    </div>
+
+                </articla>
+                <articla class="card">
+                    <div>
+                        <img class="img" src="cat.png" alt="">
+                        <p class="categoria">
+                            Gatos
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="h2">
+                            Flor de Liz a bela
+                        </h2>
+                    </div>
+                    <div>
+                        <p class="data">
+                            22/08/2024
+                        </p>
+                        <p class="tempo">
+                            10 minutos
+                        </p>
+                    </div>
+
+                </articla>
+
+            </div>
+            <div class="buttom-leia">
+                <button class="fs-1 a-escritor">
+                    Leia mais artigos
+                </button>
+            </div>
+        </section>
+        <section class="container-section">
+            <div class="bg-white">
+                <h2 class="h2">
+                    Já conhece o refúgio animal?
+                </h2>
+                <p class="text-center">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <div class="button-pagina">
+                    <button class="a-escritor">
+                        Visitar página.
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="scripts/home.js"></script>
+
+
 </body>
+
 </html>
