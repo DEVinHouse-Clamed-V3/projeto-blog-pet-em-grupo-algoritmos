@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Criar Conta</title>
 </head>
+
 <body>
-    
+
+    <div class="container-home">
+        <div class="container-titulo">
+            <h1> Criar Conta</h1>
+        </div>
+
+        <form id="form-post">
+
+            <img class="imagem" width="150px" id="visualizacao-url" />
+            <div class="input-container">
+                <label for="foto">Foto</label>
+                <input type="url" id="foto" placeholder="Url da sua foto" required />
+            </div>
+
+            <div class="input-container">
+                <label for="nome">Nome</label>
+                <input id="nome" placeholder="Seu nome" required />
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Seu email" required />
+            </div>
+
+            <div class="input-container">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Sua senha" required minlength="8" maxlength="16" />
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <div class="input-container">
+                <label for="confirmarSenha">Confirme sua senha</label>
+                <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" />
+                <span id="erro-senha" class="error"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="biografia">Biografia</label>
+                <textarea id="biografia" placeholder="Máximo 300 caracteres" maxlength="300"></textarea>
+                <span id="erro-biografia" class="error"></span>
+            </div>
+
+            <div class="button-container">
+                <button class="button-submit" type="submit">Cadastrar</button>
+            </div>
+
+            <div class="menu">
+                <a href="login.html">Voltar para tela de login</a>
+            </div>
+
+        </form>
+    </div>
+
+    <footer class="footer-app">
+        <p>Todos os direitos reservados ao grupo Algoritmos</p>
+    </footer>
+
+    <script src="./scripts/telaCadastro.js"></script>
+
 </body>
+
 </html>
